@@ -1,0 +1,87 @@
+
+// This file contains all styles related to the navigation of the site/application.
+
+header{
+  background-color: $dark_color;
+  height: 85vh;
+
+  .toggle_container{
+    @include flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 4rem;
+
+    /* HAMBURGER ICON */
+    .toggle {
+      margin-left: auto;
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      cursor: pointer;
+
+      .toggle__icon-item{
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 5px;
+        background: $orange;
+        //cubic bezier curve is a bounce transition
+        //2nd and 4 rth coordinates decide the curve
+        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
+      }
+
+      .one{
+        top: 35%;
+      }
+
+      .two{ 
+        top: 47%;
+      }
+
+      .three{
+        top: 59%;
+      }
+
+      .toggle__icon.close .one{
+        height: 3px;
+        width: 30px;
+        transform: rotate(45deg);
+        top: 59%;
+        background: $red;
+      }
+
+      .toggle__icon.close .two{
+        display: none;
+      }
+
+      .toggle__icon.close .three{
+        height: 3px;
+        width: 30px;
+        transform: rotate(-45deg);
+        background: $red;
+      }
+    }
+  } 
+
+  nav{
+    display: none;
+      
+    .nav__menu{
+      text-align: center;
+      padding-top: 10px;
+      padding-left:0;
+      list-style-type: none;
+      margin: 0;
+
+      .nav__menu-item{
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @include desktop{
+    height: 95vh;
+
+  }
+
+}

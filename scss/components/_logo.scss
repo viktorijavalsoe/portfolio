@@ -1,0 +1,120 @@
+
+.logo_container{
+  position: relative;
+  height: 50vh;
+  background-color: black;
+
+  .letter {
+  
+    font-family: $font-family-display;
+    font-size: 6rem;
+    position: absolute;
+  
+  }
+  
+  .v_one{
+    color: $pink;
+    left: 35%;
+    margin-left: -50px;
+    top: 40%;
+    margin-top: -50px;
+    -webkit-animation: grow .80s;
+    animation: grow .80s;
+    
+  }
+  
+  .v_two{
+    color: white;
+    left: 50%;
+    margin-left: 50px;
+    top: 40%;
+    margin-top: -50px;
+    -webkit-animation: grow .80s;
+    animation: grow .80s;
+   
+  }
+  
+  .logo_line{
+    position: absolute;
+    border-radius: 5px;
+    left: 30%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+  }
+
+  .top{
+    height: 2px;
+    width: 250px;
+    transform: rotate(45deg);
+    background: white;
+    animation: grow .80s;
+  }
+  
+  
+  .bottom{
+    height: 2px;
+    width: 250px;
+    transform: rotate(-45deg);
+    background: $red;
+    animation: grow .80s;
+  }
+  
+  @keyframes grow {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @include tablet{
+    height: 60vh;
+
+    .v_one{
+      left: 45%;
+      margin-left: -50px;
+    }
+
+    .v_two{
+      left: 55%;
+      margin-left: 50px;
+    }
+
+    .logo_line{
+      left: 40%;
+      margin-left: -50px;
+      top: 50%;
+      margin-top: -50px;
+      width: 300px;
+      
+    }
+
+  }
+
+  @include desktop{
+
+    .v_one{
+      left: 45%;
+      margin-left: -50px;
+    }
+
+    .v_two{
+      left: 55%;
+      margin-left: 50px;
+    }
+
+    .logo_line{
+      left: 45%;
+      margin-left: -50px;
+      top: 50%;
+      margin-top: -50px;
+      width: 300px;
+      
+    }
+
+  }
+}
+
+

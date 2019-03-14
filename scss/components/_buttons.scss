@@ -1,0 +1,44 @@
+.button_container{
+  display: flex;
+  justify-content: center;
+
+  button{
+    border: none;
+    margin-top: -50px;;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: $dark_color; 
+
+    @include desktop{
+      margin-top: -60px;;   
+    }
+  }
+
+  .white_button{
+    @extend button;
+    background-color: white;
+  }
+
+  .pink_button{
+    @extend button;
+    background-color: $pink
+  }
+}
+
+.back_button{
+  border: none;
+  margin-top: -20px;;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: $dark_color;
+  color: white;
+}
+
+
+
+
+
+
+

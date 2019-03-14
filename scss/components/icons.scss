@@ -1,0 +1,23 @@
+.icon_container{
+  display: flex;
+  justify-content: center;
+
+  .icon_link{
+    color: black;
+
+    &:hover{
+      color: #921A0F;
+    }
+
+    .fab, .fas{
+      font-size: 3rem;
+      margin: 1rem;;
+    }
+
+  }
+
+  
+
+}
+
+

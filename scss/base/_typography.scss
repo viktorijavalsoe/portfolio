@@ -1,0 +1,84 @@
+html {
+  font-size: 12px;
+  @media (min-width: 800px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: grey;
+  font-family: "georgia", serif;
+  font-weight: 300;
+  font-size: 1.5;
+}
+
+p{
+  font-size: 1.2rem;
+  font-family: "georgia", serif;
+  color: $grey;
+  line-height: 2rem;
+}
+
+p.invert{
+  color: black;
+}
+
+.heading{
+  font-size: 3rem;
+  font-family: $font-family-text;
+  font-weight: 400;
+}
+
+.heading_light{
+  @extend .heading;
+  font-family: $font-family-text;
+  font-weight: 300;
+}
+
+.subheading_invert{
+  font-family: $font-family-text;
+  color: $red;
+  font-size: 1.2rem;
+  
+}
+
+.vertical_heading{
+  @extend .heading;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 1.5rem;
+    color: $red;
+}
+
+.link{
+  font-size: 1.2rem;
+  color: $red;
+  font-family: $font-family-text;
+  text-decoration: none;
+    &:hover{
+      color: white;
+      text-decoration: none;          
+  }
+}
+
+.menu_link{
+  @extend .link;
+  color: white;
+  font-weight: 300;
+  
+  &:hover{
+    color: $red;
+  }
+}
+
+

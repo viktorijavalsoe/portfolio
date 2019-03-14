@@ -1,0 +1,19 @@
+@mixin flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin tablet{
+  @media screen and (min-width: 768px) {
+    // content is what is going to be included in our media query
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media screen and (min-width: 1024px) {
+    // content is what is going to be included in our media query
+    @content;
+  }
+}
